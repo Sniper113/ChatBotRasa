@@ -10,7 +10,6 @@ from rasa_core.domain import Domain
 from rasa_core.policies.keras_policy import KerasPolicy
 from rasa_core.policies.memoization import MemoizationPolicy
 from rasa_core.featurizers import MaxHistoryTrackerFeaturizer, BinarySingleStateFeaturizer
-from rasa_core.channels.console import ConsoleInputChannel
 from rasa_core.interpreter import RegexInterpreter
 from rasa_core.utils import EndpointConfig
 from rasa_core.interpreter import RasaNLUInterpreter
