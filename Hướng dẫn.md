@@ -36,8 +36,9 @@
 Ở đây mình đã nhập dữ liệu trong file nlu.md và sẽ có cấu trúc như sau
 
   Trong đó :
-    * intent: greet là ý đồ của khách hàng là greet(chào hỏi)
-    * Các câu còn bên dưới là các mẫu câu chat chúng ta quy ước vào intent/ý đồ chào hỏi. Mình cũng có thể thêm nhiêu câu               như:"Chào","Alo",...
+  
+   * intent: greet là ý đồ của khách hàng là greet(chào hỏi)
+   * Các câu còn bên dưới là các mẫu câu chat chúng ta quy ước vào intent/ý đồ chào hỏi. Mình cũng có thể thêm nhiêu câu               như:"Chào","Alo",...
 
   Mỗi intent có tầm từ 10 câu trở lên để đạt được kết quả cao nhất
 hình 1
