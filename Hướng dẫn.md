@@ -35,6 +35,8 @@
   Trong modul NLU có khái niệm intent - ý đồ của khách hàng. Ví dụ nếu KH Chat "Cần mua điện thoại iphone" hay "mua điện thoại" thì tuy 2 câu khác nhau nhưng cùng một ý đồ - intent là "mua_điên_thoại"
 Ở đây mình đã nhập dữ liệu trong file nlu.md và sẽ có cấu trúc như sau
 
+![](img/intent.jpg)
+
   Trong đó :
   
    * intent: greet là ý đồ của khách hàng là greet(chào hỏi)
