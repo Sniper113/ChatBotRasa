@@ -1,0 +1,1435 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "give_name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Anh",
+            "entity": "cust_sex"
+          },
+          {
+            "start": 7,
+            "end": 10,
+            "value": "Lâm",
+            "entity": "cust_name"
+          }
+        ],
+        "text": "Anh là Lâm"
+      },
+      {
+        "intent": "give_name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Chị",
+            "entity": "cust_sex"
+          },
+          {
+            "start": 7,
+            "end": 12,
+            "value": "Thanh",
+            "entity": "cust_name"
+          }
+        ],
+        "text": "Chị là Thanh"
+      },
+      {
+        "intent": "give_name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "Em",
+            "entity": "cust_sex"
+          },
+          {
+            "start": 6,
+            "end": 11,
+            "value": "Trang",
+            "entity": "cust_name"
+          }
+        ],
+        "text": "Em là Trang"
+      },
+      {
+        "intent": "give_name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "Cô",
+            "entity": "cust_sex"
+          },
+          {
+            "start": 3,
+            "end": 6,
+            "value": "Vân",
+            "entity": "cust_name"
+          }
+        ],
+        "text": "Cô Vân"
+      },
+      {
+        "intent": "give_name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Chú",
+            "entity": "cust_sex"
+          },
+          {
+            "start": 4,
+            "end": 8,
+            "value": "Hùng",
+            "entity": "cust_name"
+          }
+        ],
+        "text": "Chú Hùng"
+      },
+      {
+        "intent": "greet",
+        "text": "xin chào"
+      },
+      {
+        "intent": "greet",
+        "text": "shop ơi"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "shop ơi cho em hỏi cái"
+      },
+      {
+        "intent": "greet",
+        "text": "ad ơi cho em hỏi cái"
+      },
+      {
+        "intent": "greet",
+        "text": "ad ơi"
+      },
+      {
+        "intent": "greet",
+        "text": "chào bạn"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "mình có vài câu hỏi"
+      },
+      {
+        "intent": "greet",
+        "text": "có ai giúp mình không"
+      },
+      {
+        "intent": "greet",
+        "text": "bạn ơi"
+      },
+      {
+        "intent": "greet",
+        "text": "anh ơi"
+      },
+      {
+        "intent": "greet",
+        "text": "chị ơi"
+      },
+      {
+        "intent": "greet",
+        "text": "cháu ơi"
+      },
+      {
+        "intent": "greet",
+        "text": "chào"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "có ai ở đây không?"
+      },
+      {
+        "intent": "bye",
+        "text": "tạm biệt"
+      },
+      {
+        "intent": "bye",
+        "text": "em cám ơn shop đã tư vấn cho em"
+      },
+      {
+        "intent": "bye",
+        "text": "dạ em cám ơn shop"
+      },
+      {
+        "intent": "bye",
+        "text": "cảm ơn bạn"
+      },
+      {
+        "intent": "bye",
+        "text": "cảm ơn shop"
+      },
+      {
+        "intent": "bye",
+        "text": "chào tạm biệt"
+      },
+      {
+        "intent": "bye",
+        "text": "bye"
+      },
+      {
+        "intent": "bye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "thanks",
+        "text": "chuẩn"
+      },
+      {
+        "intent": "thanks",
+        "text": "hay"
+      },
+      {
+        "intent": "thanks",
+        "text": "siêu"
+      },
+      {
+        "intent": "thanks",
+        "text": "tuyệt"
+      },
+      {
+        "intent": "thanks",
+        "text": "cám ơn"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "thank you"
+      },
+      {
+        "intent": "thanks",
+        "text": "ok"
+      },
+      {
+        "intent": "thanks",
+        "text": "cảm ơn em"
+      },
+      {
+        "intent": "thanks",
+        "text": "cảm ơn em nhiều nhé"
+      },
+      {
+        "intent": "thanks",
+        "text": "cảm ơn"
+      },
+      {
+        "intent": "thanks",
+        "text": "tks"
+      },
+      {
+        "intent": "phone2",
+        "text": "em muốn mua 1 chiếc điện thoại giá dưới 2 triệu"
+      },
+      {
+        "intent": "phone2",
+        "text": "em muốn mua 1 chiếc  giá dưới 2 triệu"
+      },
+      {
+        "intent": "phone2",
+        "text": "em muốn mua chiếc điện thoại giá dưới 2 triệu"
+      },
+      {
+        "intent": "phone2",
+        "text": "có chiến điện thoại nào giá dưới 2 triệu không shop"
+      },
+      {
+        "intent": "phone2",
+        "text": "có chiến điện thoại nào giá dưới 2 triệu không shop"
+      },
+      {
+        "intent": "phone2",
+        "text": "cho em hỏi có con điện thoại nào giá dưới 2 triệu không shop"
+      },
+      {
+        "intent": "phone2_4",
+        "text": "em muốn mua 1 chiếc điện thoại giá từ 2 triệu đến 4 triệu"
+      },
+      {
+        "intent": "phone2_4",
+        "text": "em muốn mua 1 chiếc giá từ 2 triệu đến 4 triệu"
+      },
+      {
+        "intent": "phone2_4",
+        "text": "em muốn mua chiếc điện thoại giá từ 2 triệu đến 4 triệu"
+      },
+      {
+        "intent": "phone2_4",
+        "text": "có chiến điện thoại nào giá từ 2 triệu đến 4 triệu không shop"
+      },
+      {
+        "intent": "phone2_4",
+        "text": "có chiến điện thoại nào giá từ 2 triệu đến 4 triệu ko shop"
+      },
+      {
+        "intent": "phone2_4",
+        "text": "cho em hỏi có con điện thoại nào từ 2 đến 4 triệu không shop"
+      },
+      {
+        "intent": "phone4_7",
+        "text": "em muốn mua 1 chiếc điện thoại giá từ 4 triệu đến 7 triệu"
+      },
+      {
+        "intent": "phone4_7",
+        "text": "em muốn mua 1 chiếc giá từ 4 triệu đến 7 triệu"
+      },
+      {
+        "intent": "phone4_7",
+        "text": "em muốn mua chiếc điện thoại giá từ 4 triệu đến 7 triệu"
+      },
+      {
+        "intent": "phone4_7",
+        "text": "có chiến điện thoại nào giá từ 4 triệu đến 7 triệu không shop"
+      },
+      {
+        "intent": "phone4_7",
+        "text": "có chiến điện thoại nào giá từ 4 triệu đến 7 triệu ko shop"
+      },
+      {
+        "intent": "phone4_7",
+        "text": "cho em hỏi có con điện thoại nào từ 4 đến 7 triệu không shop"
+      },
+      {
+        "intent": "phone7_13",
+        "text": "em muốn mua 1 chiếc điện thoại giá từ 7 triệu đến 13 triệu"
+      },
+      {
+        "intent": "phone7_13",
+        "text": "em muốn mua 1 chiếc giá từ 7 triệu đến 13 triệu"
+      },
+      {
+        "intent": "phone7_13",
+        "text": "em muốn mua chiếc điện thoại giá từ 7 triệu đến 13 triệu"
+      },
+      {
+        "intent": "phone7_13",
+        "text": "có chiến điện thoại nào giá từ 7 triệu đến 13 triệu không shop"
+      },
+      {
+        "intent": "phone7_13",
+        "text": "có chiến điện thoại nào giá từ 7 triệu đến 13 triệu ko shop"
+      },
+      {
+        "intent": "phone7_13",
+        "text": "cho em hỏi có con điện thoại nào từ 7 đến 13 triệu không shop"
+      },
+      {
+        "intent": "phone13",
+        "text": "em muốn mua 1 chiếc điện thoại giá trên 13 triệu"
+      },
+      {
+        "intent": "phone13",
+        "text": "em muốn mua 1 chiếc giá trên 13 triệu"
+      },
+      {
+        "intent": "phone13",
+        "text": "em muốn mua chiếc điện thoại giá trên 13 triệu"
+      },
+      {
+        "intent": "phone13",
+        "text": "có chiến điện thoại nào giá trên 13 triệu"
+      },
+      {
+        "intent": "phone13",
+        "text": "có chiến điện thoại nào giá trên 13 triệu"
+      },
+      {
+        "intent": "phone13",
+        "text": "cho em hỏi có con điện thoại nào trên 13 triệu"
+      },
+      {
+        "intent": "ram2",
+        "text": "em muốn mua 1 chiếc điện thoại ram khoảng 2gb"
+      },
+      {
+        "intent": "ram2",
+        "text": "em muốn mua 1 chiếc điện thoại ram khoảng 2gb mà lại rẻ không shop"
+      },
+      {
+        "intent": "ram2",
+        "text": "có chiếc điện thoại nào ram khoảng 2gb mà lại rẻ không shop"
+      },
+      {
+        "intent": "ram2",
+        "text": "có chiếc điện thoại nào ram khoảng 2gb mà lại rẻ và đẹp không shop"
+      },
+      {
+        "intent": "ram4",
+        "text": "em muốn mua 1 chiếc điện thoại ram khoảng 4gb"
+      },
+      {
+        "intent": "ram4",
+        "text": "em muốn mua 1 chiếc điện thoại ram khoảng 4gb mà lại rẻ không shop"
+      },
+      {
+        "intent": "ram4",
+        "text": "có chiếc điện thoại nào ram khoảng 4gb mà lại rẻ không shop"
+      },
+      {
+        "intent": "ram4",
+        "text": "có chiếc điện thoại nào ram khoảng 4gb mà lại rẻ và đẹp không shop"
+      },
+      {
+        "intent": "ram8",
+        "text": "em muốn mua 1 chiếc điện thoại ram khoảng 8gb"
+      },
+      {
+        "intent": "ram8",
+        "text": "em muốn mua 1 chiếc điện thoại ram khoảng 8gb mà lại rẻ không shop"
+      },
+      {
+        "intent": "ram8",
+        "text": "có chiếc điện thoại nào ram khoảng 8gb mà lại rẻ không shop"
+      },
+      {
+        "intent": "ram8",
+        "text": "có chiếc điện thoại nào ram khoảng 8gb mà lại rẻ và đẹp không shop"
+      },
+      {
+        "intent": "memory16",
+        "text": "em muốn mua 1 chiếc điện thoại  khoảng 16gb"
+      },
+      {
+        "intent": "memory16",
+        "text": "em muốn mua 1 chiếc điện thoại bộ nhớ khoảng 16gb"
+      },
+      {
+        "intent": "memory16",
+        "text": "có chiếc điện thoại nào khoảng 16gb không shop"
+      },
+      {
+        "intent": "memory16",
+        "text": "có chiếc điện thoại nào bộ nhớ khoảng 16gb không shop"
+      },
+      {
+        "intent": "memory16",
+        "text": "có chiếc điện thoại nào bộ nhớ khoảng 16gb không shopmà lại rẻ không shop"
+      },
+      {
+        "intent": "rom32",
+        "text": "em muốn mua 1 chiếc điện thoại  khoảng 32gb"
+      },
+      {
+        "intent": "rom32",
+        "text": "em muốn mua 1 chiếc điện thoại bộ nhớ khoảng 32gb"
+      },
+      {
+        "intent": "rom32",
+        "text": "có chiếc điện thoại nào khoảng 32gb không shop"
+      },
+      {
+        "intent": "rom32",
+        "text": "có chiếc điện thoại nào bộ nhớ khoảng 32gb không shop"
+      },
+      {
+        "intent": "rom32",
+        "text": "có chiếc điện thoại nào bộ nhớ khoảng 32gb không shopmà lại rẻ không shop"
+      },
+      {
+        "intent": "rom64",
+        "text": "em muốn mua 1 chiếc điện thoại  khoảng 64gb"
+      },
+      {
+        "intent": "rom64",
+        "text": "em muốn mua 1 chiếc điện thoại bộ nhớ khoảng 64gb"
+      },
+      {
+        "intent": "rom64",
+        "text": "có chiếc điện thoại nào khoảng 64gb không shop"
+      },
+      {
+        "intent": "rom64",
+        "text": "có chiếc điện thoại nào bộ nhớ khoảng 64gb không shop"
+      },
+      {
+        "intent": "rom64",
+        "text": "có chiếc điện thoại nào bộ nhớ khoảng 64gb không shopmà lại rẻ không shop"
+      },
+      {
+        "intent": "rom128",
+        "text": "em muốn mua 1 chiếc điện thoại  khoảng 128gb"
+      },
+      {
+        "intent": "rom128",
+        "text": "em muốn mua 1 chiếc điện thoại bộ nhớ khoảng 128gb"
+      },
+      {
+        "intent": "rom128",
+        "text": "có chiếc điện thoại nào khoảng 128gb không shop"
+      },
+      {
+        "intent": "rom128",
+        "text": "có chiếc điện thoại nào bộ nhớ khoảng 128gb không shop"
+      },
+      {
+        "intent": "rom128",
+        "text": "có chiếc điện thoại nào bộ nhớ khoảng 128gb không shopmà lại rẻ không shop"
+      },
+      {
+        "intent": "game",
+        "text": "em muốn mua 1 chiếc điện thoại có thể chơi được pubg mobile"
+      },
+      {
+        "intent": "game",
+        "text": "em muốn mua 1 chiếc điện thoại có thể chơi được liên quân"
+      },
+      {
+        "intent": "game",
+        "text": "em muốn mua 1 chiếc điện thoại có thể chơi được liên quân và pubg mobile"
+      },
+      {
+        "intent": "game",
+        "text": "em muốn mua 1 chiếc điện thoại có thể chơi được pubg mobile và liên quân"
+      },
+      {
+        "intent": "game",
+        "text": "em muốn tìm con điện thoại có thể chơi được pubg mobile"
+      },
+      {
+        "intent": "game",
+        "text": "em muốn tìm con điện thoại có thể chơi được liên quân"
+      },
+      {
+        "intent": "game",
+        "text": "em muốn tìm con điện thoại có thể chơi được pubg mobile và liên quân"
+      },
+      {
+        "intent": "game",
+        "text": "em muốn tìm con điện thoại có thể chơi được liên quân và pubg mobile"
+      },
+      {
+        "intent": "game_vua",
+        "text": "em muốn mua 1 chiếc điện thoại có thể chơi được pubg mobile mà giá lại vừa phải"
+      },
+      {
+        "intent": "game_vua",
+        "text": "em muốn mua 1 chiếc điện thoại có thể chơi được liên quân mà giá lại vừa phải"
+      },
+      {
+        "intent": "game_vua",
+        "text": "em muốn mua 1 chiếc điện thoại có thể chơi được liên quân và pubg mobile mà giá lại vừa phải"
+      },
+      {
+        "intent": "game_vua",
+        "text": "em muốn mua 1 chiếc điện thoại có thể chơi được pubg mobile và liên quân mà giá lại vừa phải"
+      },
+      {
+        "intent": "game_vua",
+        "text": "em muốn tìm con điện thoại có thể chơi được pubg mobile mà giá lại vừa phải"
+      },
+      {
+        "intent": "game_vua",
+        "text": "em muốn tìm con điện thoại có thể chơi được liên quân mà giá lại vừa phải"
+      },
+      {
+        "intent": "game_vua",
+        "text": "em muốn tìm con điện thoại có thể chơi được pubg mobile và liên quân mà giá lại vừa phải"
+      },
+      {
+        "intent": "game_vua",
+        "text": "em muốn tìm con điện thoại có thể chơi được liên quân và pubg mobile mà giá lại vừa phải"
+      },
+      {
+        "intent": "game_cao",
+        "text": "em muốn mua 1 chiếc điện thoại có thể chơi được pubg mobile mà lại đẹp"
+      },
+      {
+        "intent": "game_cao",
+        "text": "em muốn mua 1 chiếc điện thoại có thể chơi được liên quân mà lại đẹp"
+      },
+      {
+        "intent": "game_cao",
+        "text": "em muốn mua 1 chiếc điện thoại có thể chơi được liên quân và pubg mobile mà lại đẹp"
+      },
+      {
+        "intent": "game_cao",
+        "text": "em muốn mua 1 chiếc điện thoại có thể chơi được pubg mobile và liên quân mà lại đẹp"
+      },
+      {
+        "intent": "game_cao",
+        "text": "em muốn tìm con điện thoại có thể chơi được pubg mobile mà lại đẹp"
+      },
+      {
+        "intent": "game_cao",
+        "text": "em muốn tìm con điện thoại có thể chơi được liên quânmà lại đẹp"
+      },
+      {
+        "intent": "game_cao",
+        "text": "em muốn tìm con điện thoại có thể chơi được pubg mobile và liên quân mà lại đẹp"
+      },
+      {
+        "intent": "game_cao",
+        "text": "em muốn tìm con điện thoại có thể chơi được liên quân và pubg mobile mà lại đẹp"
+      },
+      {
+        "intent": "camera",
+        "text": "em muốn mua 1 chiếc điện thoại chụp hình đẹp"
+      },
+      {
+        "intent": "camera",
+        "text": "em muốn tìm 1 chiếc điện thoại chụp hình đẹp"
+      },
+      {
+        "intent": "camera",
+        "text": "em muốn tìm mua 1 chiếc điện thoại chụp hình đẹp"
+      },
+      {
+        "intent": "camera_vua",
+        "text": "em muốn mua 1 chiếc điện thoại chụp hình đẹp mà giá lại vừa phải"
+      },
+      {
+        "intent": "camera_vua",
+        "text": "em muốn tìm 1 chiếc điện thoại chụp hình đẹp mà giá lại vừa phải"
+      },
+      {
+        "intent": "camera_vua",
+        "text": "em muốn tìm mua 1 chiếc điện thoại chụp hình đẹp mà giá lại vừa phải"
+      },
+      {
+        "intent": "camera_vua",
+        "text": "em muốn mua 1 chiếc điện thoại chụp hình đẹp mà giá lại rẻ"
+      },
+      {
+        "intent": "camera_vua",
+        "text": "em muốn tìm 1 chiếc điện thoại chụp hình đẹp mà giá lại rẻ"
+      },
+      {
+        "intent": "camera_vua",
+        "text": "em muốn tìm mua 1 chiếc điện thoại chụp hình đẹp mà giá lại rẻ"
+      },
+      {
+        "intent": "camera_cao",
+        "text": "em muốn mua 1 chiếc điện thoại chụp hình đẹp nhìn lại sang"
+      },
+      {
+        "intent": "camera_cao",
+        "text": "em muốn mua 1 chiếc điện thoại chụp hình đẹp nhìn lại model"
+      },
+      {
+        "intent": "camera_cao",
+        "text": "em muốn mua 1 chiếc điện thoại chụp hình đẹp nhìn lại quý phái"
+      },
+      {
+        "intent": "camera_cao",
+        "text": "em muốn tìm 1 chiếc điện thoại chụp hình đẹp nhìn lại sang"
+      },
+      {
+        "intent": "camera_cao",
+        "text": "em muốn tìm 1 chiếc điện thoại chụp hình đẹp nhìn lại model"
+      },
+      {
+        "intent": "camera_cao",
+        "text": "em muốn tìm 1 chiếc điện thoại chụp hình đẹp nhìn lại quý phái"
+      },
+      {
+        "intent": "camera_cao",
+        "text": "em muốn tìm mua 1 chiếc điện thoại chụp hình đẹp nhìn lại sang"
+      },
+      {
+        "intent": "camera_cao",
+        "text": "em muốn tìm mua 1 chiếc điện thoại chụp hình đẹp nhìn lại model"
+      },
+      {
+        "intent": "camera_cao",
+        "text": "em muốn tìm mua 1 chiếc điện thoại chụp hình đẹp nhìn lại quý phái"
+      },
+      {
+        "intent": "pin",
+        "text": "em muốn mua 1 chiếc điện thoại pin trâu"
+      },
+      {
+        "intent": "pin",
+        "text": "em muốn mua 1 chiếc điện thoại thời lượng pin lâu"
+      },
+      {
+        "intent": "pin",
+        "text": "em muốn mua 1 chiếc điện thoại pin khủng"
+      },
+      {
+        "intent": "pin",
+        "text": "em muốn mua 1 chiếc điện thoại pin lâu"
+      },
+      {
+        "intent": "pin",
+        "text": "em muốn tìm 1 chiếc điện thoại pin trâu"
+      },
+      {
+        "intent": "pin",
+        "text": "em muốn tìm 1 chiếc điện thoại thời lượng pin lâu"
+      },
+      {
+        "intent": "pin",
+        "text": "em muốn tìm 1 chiếc điện thoại pin khủng"
+      },
+      {
+        "intent": "pin",
+        "text": "em muốn tìm 1 chiếc điện thoại pin lâu"
+      },
+      {
+        "intent": "pin",
+        "text": "em muốn tìm mua 1 chiếc điện thoại pin trâu"
+      },
+      {
+        "intent": "pin",
+        "text": "em muốn tìm mua 1 chiếc điện thoại thời lượng pin lâu"
+      },
+      {
+        "intent": "pin",
+        "text": "em muốn tìm mua 1 chiếc điện thoại pin khủng"
+      },
+      {
+        "intent": "pin",
+        "text": "em muốn tìm mua 1 chiếc điện thoại pin lâu"
+      },
+      {
+        "intent": "pin_vua",
+        "text": "em muốn mua 1 chiếc điện thoại pin trâu mà giá lại rẻ"
+      },
+      {
+        "intent": "pin_vua",
+        "text": "em muốn mua 1 chiếc điện thoại thời lượng pin lâu mà giá lại rẻ"
+      },
+      {
+        "intent": "pin_vua",
+        "text": "em muốn mua 1 chiếc điện thoại pin khủng mà giá lại rẻ"
+      },
+      {
+        "intent": "pin_vua",
+        "text": "em muốn mua 1 chiếc điện thoại pin lâu mà giá lại rẻ"
+      },
+      {
+        "intent": "pin_vua",
+        "text": "em muốn tìm 1 chiếc điện thoại pin trâu mà giá lại rẻ"
+      },
+      {
+        "intent": "pin_vua",
+        "text": "em muốn tìm 1 chiếc điện thoại thời lượng pin lâu mà giá lại rẻ"
+      },
+      {
+        "intent": "pin_vua",
+        "text": "em muốn tìm 1 chiếc điện thoại pin khủng mà giá lại rẻ"
+      },
+      {
+        "intent": "pin_vua",
+        "text": "em muốn tìm 1 chiếc điện thoại pin lâu mà giá lại rẻ"
+      },
+      {
+        "intent": "pin_vua",
+        "text": "em muốn tìm mua 1 chiếc điện thoại pin trâu mà giá lại rẻ"
+      },
+      {
+        "intent": "pin_vua",
+        "text": "em muốn tìm mua 1 chiếc điện thoại thời lượng pin lâu mà giá lại rẻ"
+      },
+      {
+        "intent": "pin_vua",
+        "text": "em muốn tìm mua 1 chiếc điện thoại pin khủng mà giá lại rẻ"
+      },
+      {
+        "intent": "pin_vua",
+        "text": "em muốn tìm mua 1 chiếc điện thoại pin lâu mà giá lại rẻ"
+      },
+      {
+        "intent": "pin_cao",
+        "text": "em muốn mua 1 chiếc điện thoại pin trâu mà lại đẹp"
+      },
+      {
+        "intent": "pin_cao",
+        "text": "em muốn mua 1 chiếc điện thoại thời lượng pin lâu mà lại đẹp"
+      },
+      {
+        "intent": "pin_cao",
+        "text": "em muốn mua 1 chiếc điện thoại pin khủng mà lại đẹp"
+      },
+      {
+        "intent": "pin_cao",
+        "text": "em muốn mua 1 chiếc điện thoại pin lâu mà lại đẹp"
+      },
+      {
+        "intent": "pin_cao",
+        "text": "em muốn tìm 1 chiếc điện thoại pin trâu mà lại đẹp"
+      },
+      {
+        "intent": "pin_cao",
+        "text": "em muốn tìm 1 chiếc điện thoại thời lượng pin lâu mà lại đẹp"
+      },
+      {
+        "intent": "pin_cao",
+        "text": "em muốn tìm 1 chiếc điện thoại pin khủng mà lại đẹp"
+      },
+      {
+        "intent": "pin_cao",
+        "text": "em muốn tìm 1 chiếc điện thoại pin lâu mà lại đẹp"
+      },
+      {
+        "intent": "pin_cao",
+        "text": "em muốn tìm mua 1 chiếc điện thoại pin trâu mà lại đẹp"
+      },
+      {
+        "intent": "pin_cao",
+        "text": "em muốn tìm mua 1 chiếc điện thoại thời lượng pin lâu mà lại đẹp"
+      },
+      {
+        "intent": "pin_cao",
+        "text": "em muốn tìm mua 1 chiếc điện thoại pin khủng mà lại đẹp"
+      },
+      {
+        "intent": "pin_cao",
+        "text": "em muốn tìm mua 1 chiếc điện thoại pin lâu mà lại đẹp"
+      },
+      {
+        "intent": "ask",
+        "text": "em muốn mua 1 chiếc điện thoại giá từ 1 triệu đến 4 triệu"
+      },
+      {
+        "intent": "ask",
+        "text": "em muốn mua 1 chiếc giá từ 1 triệu đến 4 triệu"
+      },
+      {
+        "intent": "ask",
+        "text": "em muốn mua chiếc điện thoại giá từ 1 triệu đến 4 triệu"
+      },
+      {
+        "intent": "ask",
+        "text": "có chiến điện thoại nào giá từ 1 triệu đến 4 triệu không shop"
+      },
+      {
+        "intent": "ask",
+        "text": "có chiến điện thoại nào giá từ 1 triệu đến 4 triệu ko shop"
+      },
+      {
+        "intent": "ask",
+        "text": "cho em hỏi có con điện thoại nào từ 1 đến 4 triệu không shop"
+      },
+      {
+        "intent": "ask",
+        "text": "em muốn mua 1 chiếc điện thoại giá dưới 4 triệu"
+      },
+      {
+        "intent": "ask",
+        "text": "em muốn mua 1 chiếc giá dưới 4 triệu"
+      },
+      {
+        "intent": "ask",
+        "text": "em muốn mua chiếc điện thoại giá dưới 4 triệu"
+      },
+      {
+        "intent": "ask",
+        "text": "có chiến điện thoại nào giá dưới 4 triệu không shop"
+      },
+      {
+        "intent": "ask",
+        "text": "có chiến điện thoại nào giá dưới 4 triệu ko shop"
+      },
+      {
+        "intent": "ask",
+        "text": "cho em hỏi có con điện thoại nào dưới 4 triệu không shop"
+      },
+      {
+        "intent": "ask",
+        "text": "em muốn mua 1 chiếc điện thoại giá dưới 3 triệu"
+      },
+      {
+        "intent": "ask",
+        "text": "em muốn mua 1 chiếc giá dưới 3 triệu"
+      },
+      {
+        "intent": "ask",
+        "text": "em muốn mua chiếc điện thoại giá dưới 3 triệu"
+      },
+      {
+        "intent": "ask",
+        "text": "có chiến điện thoại nào giá dưới 3 triệu không shop"
+      },
+      {
+        "intent": "ask",
+        "text": "có chiến điện thoại nào giá dưới 3 triệu ko shop"
+      },
+      {
+        "intent": "ask",
+        "text": "cho em hỏi có con điện thoại nào dưới 3 triệu không shop"
+      },
+      {
+        "intent": "ask",
+        "text": "em muốn mua 1 chiếc điện thoại giá dưới 2 triệu"
+      },
+      {
+        "intent": "ask",
+        "text": "em muốn mua 1 chiếc giá dưới 2 triệu"
+      },
+      {
+        "intent": "ask",
+        "text": "em muốn mua chiếc điện thoại giá dưới 2 triệu"
+      },
+      {
+        "intent": "ask",
+        "text": "có chiến điện thoại nào giá dưới 2 triệu không shop"
+      },
+      {
+        "intent": "ask",
+        "text": "có chiến điện thoại nào giá dưới 2 triệu ko shop"
+      },
+      {
+        "intent": "ask",
+        "text": "cho em hỏi có con điện thoại nào dưới 2 triệu không shop"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "em muốn mua 1 chiếc điện thoại giá từ 4 triệu đến 8 triệu"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "em muốn mua 1 chiếc giá từ 4 triệu đến 8 triệu"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "em muốn mua chiếc điện thoại giá từ 4 triệu đến 8 triệu"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "có chiến điện thoại nào giá từ 4 triệu đến 8 triệu không shop"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "có chiến điện thoại nào giá từ 4 triệu đến 8 triệu ko shop"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "cho em hỏi có con điện thoại nào từ 4 đến 8 triệu không shop"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "em muốn mua 1 chiếc điện thoại giá trên 4 triệu"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "em muốn mua 1 chiếc giá trên 4 triệu"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "em muốn mua chiếc điện thoại giá trên 4 triệu"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "có chiến điện thoại nào giá trên 4 triệu không shop"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "có chiến điện thoại nào giá trên 4 triệu ko shop"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "cho em hỏi có con điện thoại nào trên 4 triệu không shop"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "em muốn mua 1 chiếc điện thoại giá trên 5 triệu"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "em muốn mua 1 chiếc giá trên 5 triệu"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "em muốn mua chiếc điện thoại giá trên 5 triệu"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "có chiến điện thoại nào giá trên 5 triệu không shop"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "có chiến điện thoại nào giá trên 5 triệu ko shop"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "cho em hỏi có con điện thoại nào trên 5 triệu không shop"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "em muốn mua 1 chiếc điện thoại giá trên 6 triệu"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "em muốn mua 1 chiếc giá trên 6 triệu"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "em muốn mua chiếc điện thoại giá trên 6 triệu"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "có chiến điện thoại nào giá trên 6 triệu không shop"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "có chiến điện thoại nào giá trên 6 triệu ko shop"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "cho em hỏi có con điện thoại nào trên 6 triệu không shop"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "em muốn mua 1 chiếc điện thoại giá trên 7 triệu"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "em muốn mua 1 chiếc giá trên 7 triệu"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "em muốn mua chiếc điện thoại giá trên 7 triệu"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "có chiến điện thoại nào giá trên 7 triệu không shop"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "có chiến điện thoại nào giá trên 7 triệu ko shop"
+      },
+      {
+        "intent": "ask_vua",
+        "text": "cho em hỏi có con điện thoại nào trên 7 triệu không shop"
+      },
+      {
+        "intent": "ask_cao",
+        "text": "em muốn mua 1 chiếc điện thoại giá trên 8 triệu"
+      },
+      {
+        "intent": "ask_cao",
+        "text": "em muốn mua 1 chiếc giá trên 8 triệu"
+      },
+      {
+        "intent": "ask_cao",
+        "text": "em muốn mua chiếc điện thoại giá trên 8 triệu"
+      },
+      {
+        "intent": "ask_cao",
+        "text": "có chiến điện thoại nào giá trên 8 triệu không shop"
+      },
+      {
+        "intent": "ask_cao",
+        "text": "có chiến điện thoại nào giá trên 8 triệu ko shop"
+      },
+      {
+        "intent": "ask_cao",
+        "text": "cho em hỏi có con điện thoại nào trên 8 triệu không shop"
+      },
+      {
+        "intent": "ask_cao",
+        "text": "em muốn mua 1 chiếc điện thoại giá trên 9 triệu"
+      },
+      {
+        "intent": "ask_cao",
+        "text": "em muốn mua 1 chiếc giá trên 9 triệu"
+      },
+      {
+        "intent": "ask_cao",
+        "text": "em muốn mua chiếc điện thoại giá trên 9 triệu"
+      },
+      {
+        "intent": "ask_cao",
+        "text": "có chiến điện thoại nào giá trên 9 triệu không shop"
+      },
+      {
+        "intent": "ask_cao",
+        "text": "có chiến điện thoại nào giá trên 9 triệu ko shop"
+      },
+      {
+        "intent": "ask_cao",
+        "text": "cho em hỏi có con điện thoại nào trên 9 triệu không shop"
+      },
+      {
+        "intent": "ask_cao",
+        "text": "em muốn mua 1 chiếc điện thoại giá trên 10 triệu"
+      },
+      {
+        "intent": "ask_cao",
+        "text": "em muốn mua 1 chiếc giá trên 10 triệu"
+      },
+      {
+        "intent": "ask_cao",
+        "text": "em muốn mua chiếc điện thoại giá trên 10 triệu"
+      },
+      {
+        "intent": "ask_cao",
+        "text": "có chiến điện thoại nào giá trên 10 triệu không shop"
+      },
+      {
+        "intent": "ask_cao",
+        "text": "có chiến điện thoại nào giá trên 10 triệu ko shop"
+      },
+      {
+        "intent": "ask_cao",
+        "text": "cho em hỏi có con điện thoại nào trên 10 triệu không shop"
+      },
+      {
+        "intent": "iphone_game",
+        "text": "em muốn mua 1 chiếc iphone có thể chơi được pubg mobile"
+      },
+      {
+        "intent": "iphone_game",
+        "text": "em muốn mua 1 chiếc iphone có thể chơi được liên quân"
+      },
+      {
+        "intent": "iphone_game",
+        "text": "em muốn mua 1 chiếc iphone có thể chơi được liên quân và pubg mobile"
+      },
+      {
+        "intent": "iphone_game",
+        "text": "em muốn mua 1 chiếc iphone có thể chơi được pubg mobile và liên quân"
+      },
+      {
+        "intent": "iphone_game",
+        "text": "em muốn tìm con iphone có thể chơi được pubg mobile"
+      },
+      {
+        "intent": "iphone_game",
+        "text": "em muốn tìm con iphone có thể chơi được liên quân"
+      },
+      {
+        "intent": "iphone_game",
+        "text": "em muốn tìm con iphone có thể chơi được pubg mobile và liên quân"
+      },
+      {
+        "intent": "iphone_game",
+        "text": "em muốn tìm con iphone có thể chơi được liên quân và pubg mobile"
+      },
+      {
+        "intent": "iphone_cam",
+        "text": "em muốn mua 1 chiếc iphone chụp hình đẹp"
+      },
+      {
+        "intent": "iphone_cam",
+        "text": "em muốn tìm 1 con iphone chụp hình đẹp"
+      },
+      {
+        "intent": "iphone_cam",
+        "text": "con iphone nào chụp hình tốt nhất vậy shop"
+      },
+      {
+        "intent": "iphone_cam",
+        "text": "con iphone nào chụp hình đẹp nhất vậy shop"
+      },
+      {
+        "intent": "oppo_game",
+        "text": "em muốn mua 1 chiếc oppo có thể chơi được pubg mobile"
+      },
+      {
+        "intent": "oppo_game",
+        "text": "em muốn mua 1 chiếc oppo có thể chơi được liên quân"
+      },
+      {
+        "intent": "oppo_game",
+        "text": "em muốn mua 1 chiếc oppo có thể chơi được liên quân và pubg mobile"
+      },
+      {
+        "intent": "oppo_game",
+        "text": "em muốn mua 1 chiếc oppo có thể chơi được pubg mobile và liên quân"
+      },
+      {
+        "intent": "oppo_game",
+        "text": "em muốn tìm con oppo có thể chơi được pubg mobile"
+      },
+      {
+        "intent": "oppo_game",
+        "text": "em muốn tìm con oppo có thể chơi được liên quân"
+      },
+      {
+        "intent": "oppo_game",
+        "text": "em muốn tìm con oppo có thể chơi được pubg mobile và liên quân"
+      },
+      {
+        "intent": "oppo_game",
+        "text": "em muốn tìm con oppo có thể chơi được liên quân và pubg mobile"
+      },
+      {
+        "intent": "oppo_cam",
+        "text": "em muốn mua 1 chiếc oppo chụp hình đẹp"
+      },
+      {
+        "intent": "oppo_cam",
+        "text": "em muốn tìm 1 con oppo chụp hình đẹp"
+      },
+      {
+        "intent": "oppo_cam",
+        "text": "con oppo nào chụp hình tốt nhất vậy shop"
+      },
+      {
+        "intent": "oppo_cam",
+        "text": "con oppo nào chụp hình đẹp nhất vậy shop"
+      },
+      {
+        "intent": "oppo_pin",
+        "text": "em muốn mua 1 chiếc oppo pin trâu"
+      },
+      {
+        "intent": "oppo_pin",
+        "text": "em muốn mua 1 chiếc oppo thời lượng pin lâu"
+      },
+      {
+        "intent": "oppo_pin",
+        "text": "em muốn mua 1 chiếc oppo pin khủng"
+      },
+      {
+        "intent": "oppo_pin",
+        "text": "em muốn tìm 1 chiếc oppo pin trâu"
+      },
+      {
+        "intent": "oppo_pin",
+        "text": "em muốn tìm 1 chiếc oppo thời lượng pin lâu"
+      },
+      {
+        "intent": "oppo_pin",
+        "text": "em muốn tìm 1 chiếc oppo pin khủng"
+      },
+      {
+        "intent": "oppo_pin",
+        "text": "em muốn tìm mua 1 chiếc oppo pin trâu"
+      },
+      {
+        "intent": "oppo_pin",
+        "text": "em muốn tìm mua 1 chiếc oppo thời lượng pin lâu"
+      },
+      {
+        "intent": "oppo_pin",
+        "text": "em muốn tìm mua 1 chiếc oppo pin khủng"
+      },
+      {
+        "intent": "oppo_pin",
+        "text": "có con oppo nào pin trâu không"
+      },
+      {
+        "intent": "oppo_pin",
+        "text": "có con oppo nào pin trâu không shop"
+      },
+      {
+        "intent": "samsung_game",
+        "text": "em muốn mua 1 chiếc samsung có thể chơi được pubg mobile"
+      },
+      {
+        "intent": "samsung_game",
+        "text": "em muốn mua 1 chiếc samsung có thể chơi được liên quân"
+      },
+      {
+        "intent": "samsung_game",
+        "text": "em muốn mua 1 chiếc samsung có thể chơi được liên quân và pubg mobile"
+      },
+      {
+        "intent": "samsung_game",
+        "text": "em muốn mua 1 chiếc samsung có thể chơi được pubg mobile và liên quân"
+      },
+      {
+        "intent": "samsung_game",
+        "text": "em muốn tìm con samsung có thể chơi được pubg mobile"
+      },
+      {
+        "intent": "samsung_game",
+        "text": "em muốn tìm con samsung có thể chơi được liên quân"
+      },
+      {
+        "intent": "samsung_game",
+        "text": "em muốn tìm con samsung có thể chơi được pubg mobile và liên quân"
+      },
+      {
+        "intent": "samsung_game",
+        "text": "em muốn tìm con samsung có thể chơi được liên quân và pubg mobile"
+      },
+      {
+        "intent": "samsung_cam",
+        "text": "em muốn mua 1 chiếc samsung chụp hình đẹp"
+      },
+      {
+        "intent": "samsung_cam",
+        "text": "em muốn tìm 1 con samsung chụp hình đẹp"
+      },
+      {
+        "intent": "samsung_cam",
+        "text": "con samsung nào chụp hình tốt nhất vậy shop"
+      },
+      {
+        "intent": "samsung_cam",
+        "text": "con samsung nào chụp hình đẹp nhất vậy shop"
+      },
+      {
+        "intent": "samsung_pin",
+        "text": "em muốn mua 1 chiếc samsung pin trâu"
+      },
+      {
+        "intent": "samsung_pin",
+        "text": "em muốn mua 1 chiếc samsung thời lượng pin lâu"
+      },
+      {
+        "intent": "samsung_pin",
+        "text": "em muốn mua 1 chiếc samsung pin khủng"
+      },
+      {
+        "intent": "samsung_pin",
+        "text": "em muốn tìm 1 chiếc samsung pin trâu"
+      },
+      {
+        "intent": "samsung_pin",
+        "text": "em muốn tìm 1 chiếc samsung thời lượng pin lâu"
+      },
+      {
+        "intent": "samsung_pin",
+        "text": "em muốn tìm 1 chiếc samsung pin khủng"
+      },
+      {
+        "intent": "samsung_pin",
+        "text": "em muốn tìm mua 1 chiếc samsung pin trâu"
+      },
+      {
+        "intent": "samsung_pin",
+        "text": "em muốn tìm mua 1 chiếc samsung thời lượng pin lâu"
+      },
+      {
+        "intent": "samsung_pin",
+        "text": "em muốn tìm mua 1 chiếc samsung pin khủng"
+      },
+      {
+        "intent": "samsung_pin",
+        "text": "có con samsung nào pin trâu không"
+      },
+      {
+        "intent": "samsung_pin",
+        "text": "có con samsung nào pin trâu không shop"
+      },
+      {
+        "intent": "ask_name",
+        "text": "bạn tên gì"
+      },
+      {
+        "intent": "ask_name",
+        "text": "tên gì"
+      },
+      {
+        "intent": "ask_name",
+        "text": "chị tên gì"
+      },
+      {
+        "intent": "ask_name",
+        "text": "anh tên gì"
+      },
+      {
+        "intent": "ask_name",
+        "text": "tên của bạn là gì"
+      },
+      {
+        "intent": "ask_name",
+        "text": "tên của chị là gì"
+      },
+      {
+        "intent": "ask_name",
+        "text": "tên của anh là gì"
+      },
+      {
+        "intent": "ask_name",
+        "text": "cho mình hỏi tên nhé"
+      },
+      {
+        "intent": "ask_name",
+        "text": "mình muốn biết tên bạn"
+      },
+      {
+        "intent": "ask_name",
+        "text": "mình muốn tiện xưng hộ hơn, cho mình biết tên nhé"
+      },
+      {
+        "intent": "ask_name",
+        "text": "để tiện xưng hộ thì tên bạn là gì"
+      },
+      {
+        "intent": "ask_name",
+        "text": "cho em xin tên của anh ạ"
+      },
+      {
+        "intent": "ask_name",
+        "text": "cho em xin tên của chị ạ"
+      },
+      {
+        "intent": "ask_name",
+        "text": "được biết tên bạn thì tốt nhỉ"
+      },
+      {
+        "intent": "ask_name",
+        "text": "vui lòng cho mình biết tên nhé"
+      },
+      {
+        "intent": "ask_name",
+        "text": "xin phép hỏi tên của bạn"
+      },
+      {
+        "intent": "ask_name",
+        "text": "vậy thì tên bạn là gì"
+      },
+      {
+        "intent": "ask_name",
+        "text": "tên bạn trong tiếng việt là gì"
+      },
+      {
+        "intent": "ask_name",
+        "text": "bạn có vui lòng cho mình biết tên được không"
+      },
+      {
+        "intent": "ask_name",
+        "text": "chúng ta nên biết tên nhau nhỉ?"
+      },
+      {
+        "intent": "ask_name",
+        "text": "em tên là gì thế"
+      },
+      {
+        "intent": "ask_name",
+        "text": "tên em là gì"
+      },
+      {
+        "intent": "ask_name",
+        "text": "tên em"
+      },
+      {
+        "intent": "ask_name",
+        "text": "tên bạn"
+      },
+      {
+        "intent": "ask_name",
+        "text": "bạn tên là gì"
+      },
+      {
+        "intent": "ask_name",
+        "text": "bạn tên gì thế"
+      },
+      {
+        "intent": "ask_name",
+        "text": "em tên gì"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}

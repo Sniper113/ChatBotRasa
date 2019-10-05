@@ -1,0 +1,170 @@
+intents:
+ - give_name
+ - greet
+ - ask_name
+ - bye
+ - thanks
+ - phone2
+ - phone2_4
+ - phone4_7
+ - phone7_13
+ - phone13
+ - ram2
+ - ram4
+ - ram8
+ - rom16
+ - rom32
+ - rom64
+ - rom128
+ - game
+ - game_vua
+ - game_cao
+ - camera
+ - camera_vua
+ - camera_cao
+ - pin
+ - pin_vua
+ - pin_cao
+ - ask
+ - ask_vua
+ - ask_cao
+ - iphone_game
+ - iphone_cam
+ - oppo_game
+ - oppo_cam
+ - oppo_pin
+ - samsung_game
+ - samsung_pin
+ - samsung_cam
+
+entities:
+  - cust_sex
+  - cust_name
+
+slots:
+ cust_sex:
+  auto_fill: true
+  type: text
+ cust_name:
+  auto_fill: true
+  type: text
+
+templates:
+  #Phần Bot sẽ trả lời
+ utter_greet:
+  - text: "Kính chào Quý khách! Quý khách vui lòng cho biết tên để tiện xưng hô được không ah?"
+ utter_thanks:
+  - text: "cám ơn quý khách đã quan tâm đến chúng tôi, xin hẹn gặp lại quý khách"
+ utter_greet_with_name:
+  - text: "Kính chào {cust_sex} {cust_name}. ABC Shop có thể giúp gì được {cust_sex} {cust_name} ạ?"
+ utter_ask_name:
+  - text: "Dạ thưa. Tên của em là Trợ lý ảo ABCShop"
+ utter_bye:
+  - text: "Kính chào tạm biệt và mong sớm gặp lại quý khách!"
+  - text: "Kính chào tạm biệt và chúc quý khách một ngày tốt lành!"
+ utter_phone2:
+  - text: "Quý khách có thể tham khảo Nokia 2720 Flip 2019, itel S15 Pro, Vsmart Star đều có giá 1.990.000 đ"
+ utter_phone2_4:
+  - text: "Quý khách có thể tham khảo Oppo A5s, Samsung Galaxy A10s, Xiaomi redmi 7 32GB đều có giá 3.690.0000 đ"
+ utter_phone4_7:
+  - text: "Quý khách có thể tham khảo Oppo A9, Samsung Galaxy A7, Vivo S1 đều có giá 6.990.000 đ"
+ utter_phone7_13:
+  - text: "Quý khách có thể tham khảo Oppo Reno, BlackBerry KEY2 LE đều có giá 10.990.000 đ"
+ utter_phone13:
+  - text: "Quý khách có thể tham khảo Iphone X 64Gb, Samsung Galaxy S10 đều có giá 22.990.000 đ"
+ utter_ram2:
+  - text: "Quý khách có thể tham khảo Vsmart Joy 2+, redmi C2 đều có giá 2.990.000 đ"
+ utter_ram4:
+  - text: "Quý khách có thể tham khảo Huawei Y9, Vivo V11i đều có giá 4.990.000 đ"
+ utter_ram8:
+  - text: "Quý khách có thể tham khảo Oppo R17 Pro có giá 10.490.000 đ"
+ utter_rom16:
+  - text: "Quý khách có thể tham khảo Redmi C2 có giá 2.290.000 đ, và Nokia 2.2 có giá 2.090.000 đ"
+ utter_rom32:
+  - text: "Quý khách có thể tham khảo Nokia 5.1 Plus, Redmi C2 đều có giá 3.290.000 đ"
+ utter_rom64:
+  - text: "Quý khách có thể tham khảo Samsung Galaxy A7, Oppo K3 đều có giá 6.990.000 đ"
+ utter_rom128:
+ - text: "Quý khách có thể tham khảo Oppo A9, Vivo S1 đều có giá 6.990.000 đ"
+ utter_game:
+  - text: "Với game cấu hình nhẹ có thể chơi hầu hết trên các điện thoại từ 2tr trở lên"
+ utter_game_vua:
+  - text: "Với game cấu hình nhẹ có thể chơi hầu hết trên các điện thoại từ 4tr trở lên"
+ utter_game_cao:
+  - text: "Với game cấu hình nhẹ có thể chơi hầu hết trên các điện thoại từ 6tr trở lên"
+ utter_camera:
+  - text: "Với camera nhu cầu bình thường có thể sữ dụng hầu hết trên các điện thoại từ 2tr trở lên"
+ utter_camera_vua:
+  - text: "Với camera nhu cầu bình thường có thể sữ dụng hầu hết trên các điện thoại từ 5tr trở lên"
+ utter_camera_cao:
+  - text: "Với camera nhu cầu bình thường có thể sữ dụng hầu hết trên các điện thoại từ 6tr trở lên"
+ utter_pin:
+  - text: "Với pin nhu cầu bình thường có thể sữ dụng hầu hết trên các điện thoại từ 2tr trở lên"
+ utter_pin_vua:
+  - text: "pin vua"
+ utter_pin_cao:
+  - text: "pin cao"
+ utter_ask:
+  - text: "ask điện thoại defaut"
+ utter_ask_vua:
+  - text: "ask điện thoại vừa phải"
+ utter_ask_cao:
+  - text: "ask điện thoại xịn"
+ utter_iphone_game:
+  - text: "Bạn có thể mua iphone 7 trở lên chú trọng bộ nhớ để có thể tải nhiều game"
+ utter_iphone_cam:
+  - text: "Bạn có thể mua iphone 8 trở lên chú trọng bộ nhớ rom để có thể chụp hình với độ nét cao mà không lo về bộ nhớ nếu có thể hảy mua iphone X"
+ utter_oppo_game:
+  - text: "oppo chơi game thì tìm con cấu hình và bộ nhớ ram cao khuyên nên dùng chíp snapdragon 710 trở lên"
+ utter_oppo_cam:
+  - text: "oppo chụp hình thì hầu hết đều chụp khá đẹp, thoải mái lựa chọn"
+ utter_oppo_pin:
+  - text: "pin trâu thì oppo đêù có pin trên 400mAh"
+ utter_samsung_game:
+  - text: "game với máy Samsung thì nên chọn những con từ 6tr trở lên vì cấu hình khá chơi được hầu hết các game phổ thông hiện nay"
+ utter_samsung_cam:
+  - text: "cam Samsung chụp đẹp nhất với dòng S và Note trong đó có S10 và Note 10"
+ utter_samsung_pin:
+  - text: " pin trâu thì có S10 và Note10 là trâu nhất hiện nay"
+ utter_unclear:
+  - text: "Thưa quý khách, hiện tại tôi chưa hiểu được yêu cầu của Quý khách. "
+
+actions:
+ - utter_greet
+ - utter_thanks
+ - utter_greet_with_name
+ - utter_ask_name
+ - utter_bye
+ - utter_phone2
+ - utter_phone2_4
+ - utter_phone4_7
+ - utter_phone7_13
+ - utter_phone13
+ - utter_ram2
+ - utter_ram4
+ - utter_ram8
+ - utter_rom16
+ - utter_rom32
+ - utter_rom64
+ - utter_rom128
+ - utter_game
+ - utter_game_vua
+ - utter_game_cao
+ - utter_camera
+ - utter_camera_vua
+ - utter_camera_cao
+ - utter_pin
+ - utter_pin_vua
+ - utter_pin_cao
+ - utter_ask
+ - utter_ask_vua
+ - utter_ask_cao
+ - utter_iphone_game
+ - utter_iphone_cam
+ - utter_oppo_game
+ - utter_oppo_cam
+ - utter_oppo_pin 
+ - utter_samsung_game
+ - utter_samsung_cam
+ - utter_samsung_pin
+ - utter_unclear
