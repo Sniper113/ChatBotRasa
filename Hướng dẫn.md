@@ -84,7 +84,7 @@ hình 1
  
   File này có dạng như sau
   
-  ![](img/stories 1.jpg)
+  ![](img/stories.jpg)
   
   Như đoạn trên là định nghĩa 1 đoạn chat giữa người và máy. Người vào chào hỏi, máy chào lại, rồi người hỏi tên, máy trả lời, rồi hỏi tiếp các món máy có thể làm, rồi tạm biệt…
 
