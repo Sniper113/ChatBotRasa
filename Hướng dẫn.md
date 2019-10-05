@@ -36,8 +36,9 @@
 Ở đây mình đã nhập dữ liệu trong file nlu.md và sẽ có cấu trúc như sau
 
   Trong đó :
-    * intent: greet là ý đồ của khách hàng là greet(chào hỏi)
-    * Các câu còn bên dưới là các mẫu câu chat chúng ta quy ước vào intent/ý đồ chào hỏi. Mình cũng có thể thêm nhiêu câu               như:"Chào","Alo",...
+  
+   * intent: greet là ý đồ của khách hàng là greet(chào hỏi)
+   * Các câu còn bên dưới là các mẫu câu chat chúng ta quy ước vào intent/ý đồ chào hỏi. Mình cũng có thể thêm nhiêu câu               như:"Chào","Alo",...
 
   Mỗi intent có tầm từ 10 câu trở lên để đạt được kết quả cao nhất
 hình 1
@@ -46,11 +47,11 @@ hình 1
 
   Mở file nlu_model.py,  nhìn ở dòng cuối có các lệnh gọi hàm ask_question, mục đích là để chúng ta truyền thử các câu hỏi của khách hàng vào xem modul NLU có đoán đúng ý đồ không:
 
-hinh ask_qs
+![](img/ask.jpg)
 
   Với những câu như trên là đang thử "Chào bạn", "Anh là Lâm", "bye" và "điện thoại 2gb ram" xem modul NLU nhận dạng như nào. Có thể chạy file nlu_model.py bằng IDE lập trình (Pycharm, VS…) hoặc gõ lệnh python nlu_model.py và nhìn trên màn hình kết quả có dạng như sau:
 
-hình train
+![](img/train.jpg)
 
   Chúng ta để ý những con số trên, với những con số ứng với mỗi intent
    * Với câu "Chào bạn", máy đã nhận đúng là intent greet vơi độ tin tưởng là 0.789
@@ -72,18 +73,19 @@ hình train
    * Phần 1: Liệt kê lại các intent của khách hàng
    * Phần 2: Phần templates, cũng là phần quang trọng. Phần này liệt kê các utter phản hồi lại các intent của khách hàng. Mỗi utter có thể định nghĩa nhiều câu text và bot sẽ chọn random các câu text này để phản hồi. Như bên dưới là utter_greet (để chào lại khách hàng khi khách chào mình) chỉ có 1 text nhưng utter_bye (để chào tạm biệt khách khi khách tạm biệt mình) thì có 2 câu text. Trong phần này cần chú ý có một utter đặc biệt là utter_unclear, utter này sẽ được gọi khi máy không hiểu được ý của người dùng, khi đó máy sẽ nói các câu dạng như “Thưa quý khách, hiện tại tôi chưa hiểu được yêu cầu của Quý khách” thay vì im tịt.
  
- hình templates
+ ![](img/templates.jpg)
  
    * Phần 3: Liệt kê lại các utter có trong phần 2
  
- hình file domain.yml
+ ![](img/domain.jpg)
  
  ## File stories.md
  
   File này như một file kể chuyện, để kết nối giữa intent và utter. Nếu như nlu.md định nghĩa intent, domain.yml định nghĩa utter. Nhưng máy đâu có hiểu là intent nào thì dùng utter nào đâu. Và đó là lý do phải có thêm file stories.md để ghép nối.
  
   File này có dạng như sau
-  hình stories 1
+  
+  ![](img/stories.jpg)
   
   Như đoạn trên là định nghĩa 1 đoạn chat giữa người và máy. Người vào chào hỏi, máy chào lại, rồi người hỏi tên, máy trả lời, rồi hỏi tiếp các món máy có thể làm, rồi tạm biệt…
 
@@ -95,13 +97,13 @@ hình train
 
   Ta mở file train_dialog.py và chạy file bằng IDE lập trình (Pycharm, VS…) hoặc gõ lệnh python train_dialog.py, sau khi máy chạy hết 200 Epoch và nhìn trên màn hình kết quả có dạng như sau:
 
-Hình train_dialog
+ ![](img/train_dialog.jpg)
 
   Sau khi train xong thì chúng ta chạy tiếp file test_dialog.py, nó sẽ hiện ra một cửa sổ chat và chúng ta có thể chat với bot để test.
 
  Và đây là kết quả
 
-hình test_bot
+ ![](img/test_bot.jpg)
 
 
 
