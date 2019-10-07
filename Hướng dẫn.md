@@ -9,30 +9,57 @@
 * [Train modul RASA Chatbot Core](#Train-modul-RASA-Chatbot-Core)
 * [Train và test Chatbot](#Train-và-test-Chatbot])
 
-
-# Giới thiệu về RASA
-
-  Dự án nghiên cứu tìm hiểu chatbot trong tư vấn bán hàng, được xây dựng trên thư viện mã nguồn mở RASA để làm chatbot, RASA có hai modul chính là RASA NLU - Nature Language Uderstanding dùng để hiểu và xử lý ngôn ngữ tự nhiên (tóm lại để hiểu xem người dùng muốn gì) và RASA Core để xử lý trả lời khách hàng 
-
 ## Yêu cầu hệ thống
 
  * 'Operating Systems: Linux (Ubuntu, CentOS), Mac'
     
  * 'Python 3.6+
+ 
+ * 'Ở đây mình dùng Windowns 10, Chạy lệnh trên cửa sổ cmd, code trên sublime và sử dụng python 3.7'
 
 # Cài đặt thư viện
 
-  Bây giờ muốn chạy được cần cài thêm thư viện asa_core, sklearn_crfsuite và spacy bằng lệnh:
+  Bây giờ muốn chạy được cần cài thêm thư viện rasa_core, sklearn_crfsuite và spacy bằng lệnh:
 
     pip install rasa_core sklearn_crfsuite spacy rasa_nlu
 
   Sau đó gõ thêm lệnh sau để tải ngôn ngữ cho spacy:
 
     python -m spacy download en
+    
+# Giới thiệu về RASA
 
-# Nhập dữ liệu cho module NLU
+  RASA stack là một open-source AI tool và là một opensource framework, nó rất dễ dàng tuỳ chỉnh. Trên thực tế trong nhiều trường hợp, khách hàng không muốn chia sẻ dữ liệu của họ lên các dịch vụ, mà phần lớn các công cụ có sẵn là dựa trên đám mây và cung cấp phần mềm dưới dạng dịch vụ (hana, chatfuel, fptai,..). Chúng ta không thể chạy nó trong nội bộ. vì vậy, ta cần gửi dữ liệu của mình cho bên thứ ba. Với RASA, không có vấn đề như vậy. Ta có thể xây dựng, triển khai hoặc lưu trữ Rasa nội bộ trong máy chủ hoặc môi trường của mình với toàn quyền kiểm soát trên đó.
+  
+  RASA có 2 phần chính:
+  * Rasa NLU - một thư viện để hiểu ngôn ngữ tự nhiên (NLU) thực hiện phân loại ý định và trích xuất thực thể từ đầu vào của người dùng và giúp bot hiểu người dùng đang nói gì.
+  * Rasa Core - một khung chatbot với quản lý hội thoại dựa trên máy học, lấy đầu vào có cấu trúc từ NLU và dự đoán hành động tốt nhất tiếp theo bằng mô hình xác suất như mạng thần kinh LSTM.
+  NLU và Core là 2 thành phần độc lập và người ta có thể sử dụng NLU mà không cần Core, và ngược lại. Mặc dù Rasa khuyên chúng ta nên sử dụng cả hai
+  
+  Lần nay ta sẽ triển khai mô hình chatbot ứng với đề tài cứu tìm hiểu chatbot trong tư vấn bán hàng dựa trên thư viện mã nguồn mở RASA.
+  Để bắt đầu thì ta sẽ tìm hiểu về một số keywords sẽ sữ dụng trong project này
+  * Intent - Intent(ý định) không là gì ngoài những gì người dùng đang hướng tới. Ví dụ: nếu người dùng nói rằng "Giới thiệu về 1 chiếc điện thoại để chơi game", ý định có thể được phân loại là "mua điện thoại"
+  * Entity - Entity(thực thể) là để trích xuất thông tin hữu ích từ đầu vào của người dùng. Từ ví dụ trên, "Cần mua 1 chiếc điện thoại để chơi game", các thực thể được trích xuất sẽ là mục đích và chức năng. Mục đích - mua và chức năng - chơi game.
+  * Stories - Stories(câu truyện) xác định sự tương tác mẫu giữa người dùng và chatbot theo ý định và hành động được thực hiện bởi bot.
+  * Actions - Actions(hành động) về cơ bản là các hoạt động được thực hiện bởi bot hoặc yêu cầu thêm một số chi tiết để có được tất cả các thực thể hoặc tích hợp với một số API hoặc truy vấn cơ sở dữ liệu để nhận / lưu một số thông tin.
+  
+  Bây giờ ta đã biết một điều cơ bản, bây giờ ta sẽ tập trung chủ yếu vào Rasa hiểu ngôn ngữ tự nhiên (NLU) bào gồm trích xuất Intent Classifying & Entity và tạo ra một đầu ra có cấu trúc có thể được đưa vào Rasa Core.
+  
+# Rasa Natural Language Understanding (NLU)
 
-  Trong modul NLU có khái niệm intent - ý đồ của khách hàng. Ví dụ nếu KH Chat "Cần mua điện thoại iphone" hay "mua điện thoại" thì tuy 2 câu khác nhau nhưng cùng một ý đồ - intent là "mua_điên_thoại"
+  Như chúng ta đã tóm tắt về NLU ở trên, chúng ta cần dạy bot của chúng ta hiểu các thông điệp của chúng ta trước. Vì vậy, ta phải train mô hình NLU với các đầu vào của ta ở định dạng văn bản đơn giản và trích xuất dữ liệu có cấu trúc. Chúng ta sẽ đạt được điều này bằng cách xác định ý định và cung cấp một vài cách người dùng có thể thể hiện chúng.
+  Để làm việc này, chúng ta cần xác định một số tệp. Trước tiên hãy hiểu những tập tin này
+  * NLU training file: Nó chứa một số dữ liệu train về mặt đầu vào của người dùng cùng với việc ánh xạ các ý định và thực thể có trong mỗi chúng. Các ví dụ khác nhau mà bạn cung cấp, khả năng bot NLU của bạn sẽ trở nên tốt hơn.
+  * Stories file: Tệp này chứa các tương tác mẫu mà người dùng và bot sẽ có. Rasa (Core) tạo ra một mô hình tương tác có thể xảy ra từ mỗi câu chuyện.
+  * Domain file: Tệp này liệt kê tất cả ý định(intents), thực thể(entities), hành động(actions), mẫu(templates) và một số thông tin khác. Chúng ta sẽ đến chi tiết về tệp này khi tới phần Rasa Core.
+
+## Nhập dữ liệu cho module NLU
+
+  Sau khi đã cài đặt đầy đủ các package cần thiết, thì ta bắt đầu tạo cấu trúc dự án. Ta đặt tên cho dự án là ChatBotRaSa và đây là tên thư mục dự án cơ sở. Đối với các file training/data, ta tạo một thư mục data trong thư mục ChatBotRaSa và tạo tệp training nlu.md.
+  
+  hình creatchat
+  
+  Trong modul NLU có khái niệm intent - ý đồ của khách hàng. Ví dụ nếu KH Chat "Cần mua điện thoại iphone" hay "mua điện thoại" thì tuy 2 câu khác nhau nhưng cùng một ý đồ - intent là "mua_điên_thoại". Các dữ liệu được cung cấp sẽ giúp đào tạo bot. Nhiều dữ liệu hơn sẽ giúp tạo bot tốt hơn. Mỗi intent có tầm từ 10 câu trở lên để đạt được kết quả cao nhất
 Ở đây mình đã nhập dữ liệu trong file nlu.md và sẽ có cấu trúc như sau
 
 ![](img/intent.jpg)
@@ -40,10 +67,10 @@
   Trong đó :
   
    * intent: greet là ý đồ của khách hàng là greet(chào hỏi)
-   * Các câu còn bên dưới là các mẫu câu chat chúng ta quy ước vào intent/ý đồ chào hỏi. Mình cũng có thể thêm nhiêu câu               như:"Chào","Alo",...
+   * Các câu còn bên dưới là các mẫu câu chat chúng ta quy ước vào intent/ý đồ chào hỏi. Mình cũng có thể thêm nhiêu câu như:"Chào","Alo",...
 
-  Mỗi intent có tầm từ 10 câu trở lên để đạt được kết quả cao nhất
-hình 1
+  
+
 # Train và kiểm tra module NLU
   Module NLU cần phải được kiểm tra kỹ trước khi làm các bước tiếp theo bởi vì nếu ta hiểu sai ý đồ/intent của khách hàng thì các bước sau đều sai cả
 
